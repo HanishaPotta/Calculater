@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter as Calculater</title>
+    <link href="styles.css" rel="stylesheet">
+    
+</head>
+<body>
+    
+    <div class="welcome">
+      <h1>Welcome to Harry Potter's Wizard's Calculator !!</h1>  
+    </div>
+   
+    <div class="calculator">
+      
+       <div>
+        <button class="btn" onclick="appendToDisplay('7');changeimg('7')">7</button>
+        <button class="btn" onclick="appendToDisplay('8');changeimg('8')">8</button>
+        <button class="btn" onclick="appendToDisplay('9');changeimg('9')">9</button>
+        <button class="btn" onclick="appendToDisplay('+');changeimg('+')">+</button>
+    </div>
+    <div>
+        <button class="btn" onclick="appendToDisplay('4');changeimg('4')">4</button>
+        <button class="btn" onclick="appendToDisplay('5');changeimg('5')">5</button>
+        <button class="btn" onclick="appendToDisplay('6');changeimg('6')">6</button>
+        <button class="btn" onclick="appendToDisplay('-');changeimg('-')">-</button>
+    </div>
+    <div>
+        <button class="btn" onclick="appendToDisplay('1');changeimg('1')">1</button>
+        <button class="btn" onclick="appendToDisplay('2');changeimg('2')">2</button>
+        <button class="btn" onclick="appendToDisplay('3');changeimg('3')">3</button>
+        <button class="btn" onclick="appendToDisplay('*');changeimg('*')">*</button>
+    </div>
+    <div>
+        <button class="btn" onclick="appendToDisplay('00');changeimg('00')">00</button>
+        <button class="btn" onclick="appendToDisplay('0');changeimg('0')">0</button>
+        <button class="btn" onclick="appendToDisplay('.');changeimg('.')">.</button>
+        <button class="btn" id="equals" onclick="calculate(); changeimg('=')">=</button>
+    </div>
+    <div>
+        <button class="btn" id="clear" onclick="clearDisplay(); changeimg('AC')">AC</button>
+        <button class="btn" id="clear" onclick="clearLast(); changeimg('del')">DEL</button>
+        <button class="btn" onclick="appendToDisplay('%')">%</button>
+        
+    </div>
+    <div>
+    <input type="text" id="display" readonly>
+</div>
+    <div>
+        <input type="text" id="displayres" readonly>
+    </div>
+</div>
+<div>
+    <img id="potterImage" src="images/harry1.jpg" alt="Harry Potter">
+</div>
+
+    <script src="Cal.js"></script>
+</body>
+</html>
