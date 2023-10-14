@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-   
+    cursor: url('images/harry2.jpg');
     justify-content: center;
     width: 100%;
     height: 100vh;
@@ -45,7 +45,7 @@ body {
 */
 @font-face {
     font-family: "Harry P";
-    src: url("HARRP___.TTF");
+    src: url("HARRYP__.TTF");
   }
   
   h1 {
@@ -82,7 +82,7 @@ body {
 
 }
 input[type="text"] {
-    width: 80%;
+    /*width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     font-size: 15px;
@@ -90,7 +90,16 @@ input[type="text"] {
     color: #fff;
     border: none;
     border-radius: 5px;
-    font-family: "Harry P", sans-serif;
+    font-family: "Harry P", sans-serif;*/
+    width:50%;
+    padding: 8px;
+    font-family: 'Harry P', sans-serif;
+    font-size: 30px;
+    color: #7f0909;
+    text-shadow: 2px 2px 0px #d69e16;
+    background: #eeba30;
+    /*background-image: url('images/signboard.jpg');
+    background-size: cover;*/
 }
 #potterImage{
     width:20%;
